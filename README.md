@@ -42,6 +42,12 @@ From the project folder:
 Open in the browswer:
 `http://127.0.0.1:5000`
 
+## Running note 
+
+This project is tested on Python 3.11.
+
+If you are on Python 3.14 and you see NumPy import errors, use Python 3.11 for this project or run it inside a virtual environment created with Python 3.11.
+
 
 
 
