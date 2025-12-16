@@ -1,2 +1,47 @@
-# JobFit-Vector-Based-Job-Matching-with-Retrieval-Augmented-Generation
-This project matches job advertisements to a candidate profile using semantic similarity and generates explanations grounded strictly in job description text.
+# JobFit – Vector-Based Job Matching with Retrieval-Augmented Generation
+
+This project ranks job advertisements against a candidate profile using vector embeddings and similarity search. It applies basic rule-based filters (seniority level, work rights, and government or clearance keywords) to exclude roles that are not applicable.
+
+For the top remaining job, the system retrieves the most relevant text chunks from the job description and passes them to a local language model (via Ollama). The model produces a chunk-cited explanation that shows which parts of the job description are relevant to the match. 
+
+The project runs locally and uses:
+- Vector similarity search for job matching
+- Retrieval-Augmented Generation (retrieving relevant text chunks and feeding them to a local language model) 
+- A simple web interface to display results
+
+<br>
+
+## Requirements
+
+- Python
+- Ollama (model used in the project: gemma3:4b)
+- A `jobs.csv` file in the same folder as `jobfit.py`
+
+<br>
+
+## Install 
+
+### 1) Create and activate a virtual environment
+```powershell
+python -m venv .venv
+.\.venv\Scripts\activate
+```
+### 2) Install Python packages
+`pip install pandas numpy faiss-cpu sentence-transformers flask ollama`
+
+### 3) Install Ollama and download the model
+1. Install Ollama
+2. Download the model your code uses (eg, gemma3:4b)
+
+<br>
+
+## Run
+
+From the project folder:
+`python app.py`
+Open in the browswer:
+`http://127.0.0.1:5000`
+
+
+
+
