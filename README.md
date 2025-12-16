@@ -48,6 +48,10 @@ This project is tested on Python 3.11.
 
 If you are on Python 3.14 and you see NumPy import errors, use Python 3.11 for this project or run it inside a virtual environment created with Python 3.11. (eg, `python3.11 -m venv .venv`)
 
+## Demo Screenshot
+![JobFit Web Interface](DemoScreenshot/jobfit-ui.png)
+
+
 
 
 
