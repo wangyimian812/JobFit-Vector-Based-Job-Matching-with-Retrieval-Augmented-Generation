@@ -9,7 +9,7 @@ The project runs locally and uses:
 - Retrieval-Augmented Generation (retrieving relevant text chunks and feeding them to a local language model) 
 - A simple web interface to display results
 
-<br>
+---
 
 ## Requirements
 
@@ -17,7 +17,7 @@ The project runs locally and uses:
 - Ollama (model used in the project: gemma3:4b)
 - A `jobs.csv` file in the same folder as `jobfit.py`
 
-<br>
+---
 
 ## Install 
 
@@ -33,7 +33,7 @@ python -m venv .venv
 1. Install Ollama
 2. Download the model your code uses (eg, gemma3:4b)
 
-<br>
+---
 
 ## Run
 
